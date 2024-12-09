@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light grey background for a modern feel */
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50; /* Dark blue shade */
+    margin-top: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    height: auto  ;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the form and resume */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #34495e; /* Muted dark blue */
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7; /* Light grey border */
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #3498db; /* Bright blue for focus */
+    outline: none;
+    box-shadow: 0 0 3px #3498db;
+  }
+  
+  .button {
+    display: block;
+    width: 100%; /* Full width */
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px; /* Consistent spacing */
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #2980b9; /* Slightly darker blue */
+  }
+/* Resume Output Styles */
+
+#resumeOutput {
+max-width: 600px;
+margin: 20px auto; /* Center the resume output */
+padding: 25px;
+border: 1px solid #ccc;
+border-radius: 10px;
+font-family: 'Arial', sans-serif;
+background: linear-gradient(to bottom, #ffffff, #f9f9f9); /* Subtle gradient background */
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Smooth shadow for depth */
+}
+
+#editResume {
+background-color: #28a745; /* Green for positive actions */
+color: #fff;
+border: none;
+border-radius: 6px;
+padding: 10px 15px;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#editResume:hover {
+background-color: #0056b3; /* Slightly darker blue on hover */
+transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.resume-header {
+text-align: center; /* Center the entire header */
+margin-bottom: 25px;
+}
+
+.resume-header img {
+width: 120px; /* Adjust size for balance */
+height: 120px; /* Ensure perfect circle */
+object-fit: cover; /* Maintain aspect ratio */
+border-radius: 50%; /* Circular image */
+border: 3px solid #007bff; /* Blue border for a professional touch */
+margin: 0 auto 15px; /* Center image */
+display: block;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.resume-header h2 {
+font-size: 24px; /* Larger name font */
+color: #2c3e50;
+margin-bottom: 8px;
+text-transform: uppercase; /* Make the name stand out */
+letter-spacing: 1.2px; /* Slight spacing for elegance */
+}
+
+.resume-header p {
+font-size: 14px;
+color: #555;
+margin: 4px 0;
+}
+
+.resume-body {
+margin-top: 20px;
+color: #333;
+line-height: 1.8; /* Improved readability */
+}
+
+.resume-body h3 {
+font-size: 20px;
+color: #007bff; /* Blue for section headings */
+border-bottom: 2px solid #3498db; /* Underline effect */
+padding-bottom: 5px;
+margin-bottom: 15px;
+font-family: 'Arial', sans-serif;
+}
+
+.resume-body p {
+font-size: 16px; /* Larger text for readability */
+color: #555;
+margin: 10px 0;
+}
+
+.resume-section {
+margin-bottom: 20px; /* Spacing between sections */
+}
+
+.resume-section ul {
+list-style-type: square; /* Square bullets for distinction */
+padding-left: 20px;
+margin: 10px 0;
+}
+
+.paraghraph {
+margin-top: 15px;
+font-weight: bold;
+color: #007bff; /* Blue for highlighted labels */
+font-size: 15px;
+}
+
+button {
+margin: 10px 0;
+display: inline-block;
+width: calc(50% - 10px); /* Space for multiple buttons in one row */
+}
+
+#download-pdf, #share-resume {
+background-color: #28a745; /* Green for positive actions */
+color: #fff;
+border: none;
+border-radius: 6px;
+padding: 10px 15px;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#download-pdf:hover, #share-resume:hover {
+background-color: #218838; /* Darker green on hover */
+transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+@media (max-width: 768px) {
+#resumeOutput {
+  padding: 20px;
+}
+
+button {
+  width: 100%; /* Full-width buttons for smaller screens */
+  margin: 10px 0;
+}
+}
